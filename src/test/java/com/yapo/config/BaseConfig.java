@@ -16,7 +16,6 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.yapo.util.HtmlReport;
 
-
 public class BaseConfig {
 
 	public WebDriver driver;
@@ -41,24 +40,24 @@ public class BaseConfig {
 		Test testName = method.getAnnotation(Test.class);
 		description = (testName != null) ? testName.description() : "";
 		extentTest = extent.startTest(nameClass, description);
-			System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
-			ChromeOptions option = new ChromeOptions();
-			driver = new ChromeDriver(option);
-			driver.manage().deleteAllCookies();
-			driver.navigate().to("http://www.google.cl");
-			System.out.println("Successfully opened the website");
-			driver.manage().window().maximize();
-			driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-			driver.manage().timeouts().setScriptTimeout(5, TimeUnit.SECONDS);		
+		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
+		ChromeOptions option = new ChromeOptions();
+		driver = new ChromeDriver(option);
+		driver.manage().deleteAllCookies();
+		driver.navigate().to("http://www.yapo.cl");
+		System.out.println("Successfully opened the website");
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		driver.manage().timeouts().setScriptTimeout(5, TimeUnit.SECONDS);
 	}
 
 	@AfterMethod()
 	public void tearDown(ITestResult result) throws IOException {
 		System.out.println("State Case: " + nameClass + " = " + htrep.returnStateCase(result));
-		htrep.generateStep(extentTest, result, "Caso ejecutado " + nameClass,driver);
+		htrep.generateStep(extentTest, result, "Caso ejecutado " + nameClass, driver);
 		extent.endTest(extentTest);
 		extent.flush();
-	//	driver.quit();
+		driver.quit();
 	}
 
 	@AfterSuite

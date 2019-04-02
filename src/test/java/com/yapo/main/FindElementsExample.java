@@ -7,7 +7,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
 import java.nio.file.Paths;
-import java.util.List;
 
 public class FindElementsExample {
 

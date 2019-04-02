@@ -18,8 +18,8 @@ public class Buscar extends BaseConfig {
 
 	@FindBy(css = ".gLFyf")
 	private WebElement txtBox;
-	@FindBy(xpath = "(//input[@value = 'Buscar con Google' ])[2]")
-	private WebElement btngo;
+	@FindBy(xpath = "//*[@id = 'resultStats']")
+	private WebElement resultStats;
 
 	public boolean ingresarTexto(String texto) {
 		try {
@@ -34,10 +34,9 @@ public class Buscar extends BaseConfig {
 
 	}
 
-	public boolean btnBuscar() {
+	public boolean encontrebusqueda() {
 		try {
-			WaitWebDriver.waitVisibility(driver, btngo, 4);
-			btngo.click();
+			WaitWebDriver.waitVisibility(driver, resultStats, 4);
 			return true;
 		} catch (Exception e) {
 			return false;

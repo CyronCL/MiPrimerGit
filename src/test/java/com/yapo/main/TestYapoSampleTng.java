@@ -64,13 +64,13 @@ public class TestYapoSampleTng {
 		public PublicarAviso() {
 			    PageFactory.initElements(driver, this);
 			   }		
-		@FindBy(css = ".header-right .btn-home")
+		@FindBy(css = ".header-right .btn-homeaaaaaaaaa")
 		private WebElement publicarAviso;
+		
 	public boolean clickPublicarAviso() {
-		try {
-			
+		try {			
 			System.out.println("Ingresando a publicarAviso");
-			WebDriverWait wait = new WebDriverWait(driver, 60);
+			WebDriverWait wait = new WebDriverWait(driver, 2);
 			Actions action = new Actions(driver);
 			//wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.cssSelector(".header-right .btn-home")))).click();
 			wait.until(ExpectedConditions.elementToBeClickable(publicarAviso));

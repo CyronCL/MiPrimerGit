@@ -1,4 +1,9 @@
 eclipse.preferences.version=1
+encoding//resource/Formulario.json=ISO-8859-1
 encoding//src/main/java=UTF-8
 encoding//src/test/java=UTF-8
-encoding/<project>=UTF-8
+encoding//src/test/java/com/yapo/dataprovider/FileDataProvider.java=UTF-8
+encoding//src/test/java/com/yapo/dataprovider/IntegratedDataProvider.java=UTF-8
+encoding//src/test/java/com/yapo/test/Caso_de_Prueba.java=ISO-8859-1
+encoding/<project>=ISO-8859-1
+separateDerivedEncodings=true

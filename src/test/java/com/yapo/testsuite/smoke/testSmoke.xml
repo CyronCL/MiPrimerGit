@@ -4,7 +4,7 @@
 	<test name="TestSuite">
 		<packages>
 			<package
-				name="com.continuidadLogistica.test.bi.microStrategy.dashboardJefes.moduloConnectAPV" />
+				name="com.yapo.test" />
 		</packages>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
