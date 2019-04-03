@@ -57,7 +57,7 @@ public class BaseConfig {
 		htrep.generateStep(extentTest, result, "Caso ejecutado " + nameClass, driver);
 		extent.endTest(extentTest);
 		extent.flush();
-		driver.quit();
+		//driver.quit();
 	}
 
 	@AfterSuite

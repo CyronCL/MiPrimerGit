@@ -68,7 +68,8 @@ public class TestYapoSampleTng {
 		private WebElement publicarAviso;
 		
 	public boolean clickPublicarAviso() {
-		try {			
+		try {	
+			
 			System.out.println("Ingresando a publicarAviso");
 			WebDriverWait wait = new WebDriverWait(driver, 2);
 			Actions action = new Actions(driver);

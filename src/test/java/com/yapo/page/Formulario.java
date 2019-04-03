@@ -60,6 +60,7 @@ public class Formulario extends BaseConfig {
 			selectDormitorios.selectByVisibleText(dormitorio);
 			return true;
 		} catch (Exception e) {
+			System.out.println(e);
 			e.printStackTrace();
 			return false;
 		}

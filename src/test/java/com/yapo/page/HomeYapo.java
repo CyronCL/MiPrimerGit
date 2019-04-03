@@ -16,7 +16,8 @@ public class HomeYapo extends BaseConfig {
 		    PageFactory.initElements(driver, this);
 	}
 	@FindBy(css = ".header-right .btn-home")
-	private WebElement publicarAviso;
+	private WebElement publicarAviso;	
+	
 	
 public boolean clickPublicarAviso() {
 	try {			
