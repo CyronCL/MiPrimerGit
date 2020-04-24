@@ -21,6 +21,6 @@ public class Caso_de_Prueba extends BaseConfig{
 		soft.assertTrue(formulario.seleccionandodormitorios(datosFormulario.getDormitorios()), "NO agrege dormitorios");
 		soft.assertTrue(formulario.seleccionandobanos(datosFormulario.getBanos()), "NO agrege andobanos");
 		soft.assertTrue(formulario.continuarflujo(), "NO agrege flujo");
-		soft.assertAll();				
+		soft.assertAll();
 	}
 }

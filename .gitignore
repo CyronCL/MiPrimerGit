@@ -1,2 +1,30 @@
-/target/
-/test-output/
+# Maven
+target
+
+# TestNG
+test-output
+report
+
+# Eclipse
+.metadata
+.settings
+.classpath
+.project
+
+# IntelliJ IDEA
+.idea
+*.iml
+
+# Windows
+RemoteSystemsTempFiles
+
+# Mac
+.DS_Store
+/bin/
+
+# otros
+*.log
+*.lck
+
+# VS Code
+.vscode/

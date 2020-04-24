@@ -108,7 +108,7 @@ public class Formulario extends BaseConfig {
 			WebElement descripcion = wait
 					.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.cssSelector("#body"))));
 			System.out.println("Ingresando un titulo");
-			descripcion.sendKeys("Capacitacion de Selenium WebDriver en Tsoft");
+			descripcion.sendKeys("Capacitacion de Selenium WebDriver");
 			System.out.println(String.format("Descripcion: %s", descripcion.getAttribute("value")));
 			return true;
 		} catch (Exception e) {
